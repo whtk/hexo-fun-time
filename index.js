@@ -1,6 +1,6 @@
-var getJoke = require('./lib/joke');
+/*var getJoke = require('./lib/joke');*/
 
-var defaultStyle = {
+/*var defaultStyle = {
   body: {
     width: "400px",
     padding: "10px",
@@ -14,6 +14,7 @@ var defaultStyle = {
   },
   content: {}
 };
+//读配置
 var hexoConfig = hexo.config.fun_time || {style: {body: {}, title: {}, content: {}}};
 var config = {
   disable: hexoConfig.disable || false,
@@ -25,8 +26,8 @@ var config = {
     title: Object.assign({}, defaultStyle.title, hexoConfig.style.title),
     content: Object.assign({}, defaultStyle.content, hexoConfig.style.content),
   }
-};
-
+};*/
+//标签
 hexo.extend.tag.register('funTime', function (args) {
   if (config.disable) {
     return "";
